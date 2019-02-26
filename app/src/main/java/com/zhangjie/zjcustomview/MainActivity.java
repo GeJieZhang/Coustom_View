@@ -27,31 +27,14 @@ import java.util.Timer;
 public class MainActivity extends AppCompatActivity {
 
 
-    private LoadingButton loadingButton;
 
-    private Handler handler=new Handler();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        loadingButton=findViewById(R.id.ld);
 
-        loadingButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Toast.makeText(MainActivity.this,"sdf",Toast.LENGTH_SHORT).show();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        loadingButton.stopLoading();
-
-
-                    }
-                },5000);
-            }
-        });
 
 
 

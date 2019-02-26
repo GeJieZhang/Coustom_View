@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
 
-    android:gravity="center"
-    android:orientation="vertical"
+    android:orientation="vertical">
 
-    >
+  <com.zhangjie.zjcustomview.view.TagLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" >
 
-    <com.zhangjie.zjcustomview.view.zj.LoadingButton
-        android:id="@+id/ld"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        app:text="提现"
-        app:textSize="8sp"
-        android:layout_margin="4dp"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你好"
 
-        app:borderRadius="0dp"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的"
+
+        />
+  </com.zhangjie.zjcustomview.view.TagLayout>
+
+
+
 
 
 </LinearLayout>

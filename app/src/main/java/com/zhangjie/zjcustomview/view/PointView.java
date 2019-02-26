@@ -15,6 +15,11 @@ import com.zhangjie.zjcustomview.R;
 
 import javax.security.auth.login.LoginException;
 
+
+/**
+ * 原点拖拽
+ */
+
 public class PointView extends View {
 
     private PointF startPoint,endPoint;

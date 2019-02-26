@@ -14,11 +14,17 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
+import android.widget.Toast;
 
 import com.zhangjie.zjcustomview.R;
 import com.zhangjie.zjcustomview.tool.CoustomViewTools;
 import com.zhangjie.zjcustomview.tool.PxUtils;
 
+import java.util.Date;
+
+/**
+ * 京软加载按钮
+ */
 public class LoadingButton extends View {
 
     private int DEFAULT_BGCOLOR = Color.parseColor("#0E8DD4");
@@ -50,7 +56,7 @@ public class LoadingButton extends View {
 
 
     private int STATE = 0;
-
+    long t1 = 0;//记录上一次单击的时间，初始值为0
     public LoadingButton(Context context) {
         this(context, null);
     }
@@ -325,17 +331,37 @@ public class LoadingButton extends View {
         switch (event.getAction()){
             case MotionEvent.ACTION_UP:{
 
-                switch (STATE) {
 
-                    case 0: {
 
-                        STATE = 1;
 
-                        invalidate();
+                if(t1==0){//第一次单击，初始化为本次单击的时间
+                    t1= (new Date()).getTime();
+                }else{
+                    long curTime = (new Date()).getTime();//本地单击的时间
+                    //System.out.println("两次单击间隔时间："+(curTime-t1));//计算本地和上次的时间差
+                    if(curTime-t1>1*1000){
+                        //间隔5秒允许点击，可以根据需要修改间隔时间
+                        t1 = curTime;//当前单击事件变为上次时间
+                        switch (STATE) {
 
-                        break;
+                            case 0: {
+
+                                STATE = 1;
+
+                                invalidate();
+
+                                break;
+                            }
+                        }
+
+                    }else {
+                        //提示不要频繁点击
+
+                        Toast.makeText(getContext(),"操作频繁",Toast.LENGTH_SHORT).show();
                     }
                 }
+
+
 
                 break;
             }

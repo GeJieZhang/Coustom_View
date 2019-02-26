@@ -15,6 +15,9 @@ import android.widget.AbsListView;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
+/**
+ * 抽屉式菜单
+ */
 public class DrawerView extends FrameLayout {
 
     private ViewDragHelper mDragHelper;

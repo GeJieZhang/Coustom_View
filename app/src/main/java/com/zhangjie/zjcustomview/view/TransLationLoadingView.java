@@ -17,6 +17,10 @@ import android.widget.LinearLayout;
 import com.zhangjie.zjcustomview.MyApplication;
 import com.zhangjie.zjcustomview.R;
 
+
+/**
+ * 左右移动小球
+ */
 public class TransLationLoadingView extends LinearLayout {
 
     private CircleView viewLeft, viewModell, viewRight;

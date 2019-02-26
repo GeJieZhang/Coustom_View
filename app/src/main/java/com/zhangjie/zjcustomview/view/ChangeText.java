@@ -18,7 +18,9 @@ import com.zhangjie.zjcustomview.R;
 import com.zhangjie.zjcustomview.tool.PxUtils;
 import com.zhangjie.zjcustomview.tool.TextUtils;
 
-
+/**
+ * 变色文字
+ */
 public class ChangeText extends android.support.v7.widget.AppCompatTextView {
     private int viewWidth = 0;
     private int viewHeight = 0;

@@ -16,6 +16,9 @@ import com.zhangjie.zjcustomview.R;
 
 /**
  * Created by hcDarren on 2017/7/30.
+ *
+ *
+ * 消息拖拽
  */
 
 public class MessageBubbleView extends View {

@@ -12,8 +12,11 @@ import android.widget.FrameLayout;
 /**
  * Email 240336124@qq.com
  * Created by Darren on 2017/6/25.
- * Version 1.0
+ * Version 1.0u
  * Description:
+ *
+ *
+ * 垂直拖动布局
  */
 public class VerticalDragListView extends FrameLayout {
 

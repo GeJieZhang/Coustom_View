@@ -11,6 +11,11 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.HorizontalScrollView;
 
+
+/**
+ * 上下滑动抽屉布局
+ */
+
 public class SlideView extends HorizontalScrollView {
 
     private View menuView;

@@ -11,6 +11,9 @@ import android.view.View;
 import com.zhangjie.zjcustomview.R;
 import com.zhangjie.zjcustomview.tool.CoustomViewTools;
 
+/**
+ * 右侧字母选择栏
+ */
 public class LetterView extends View {
 
 

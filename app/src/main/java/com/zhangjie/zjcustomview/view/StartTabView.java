@@ -19,6 +19,10 @@ import android.widget.Toast;
 import com.zhangjie.zjcustomview.MyApplication;
 import com.zhangjie.zjcustomview.R;
 
+/**
+ * 评分控件
+ */
+
 public class StartTabView extends View {
 
     private int count = 5;//星星的数量

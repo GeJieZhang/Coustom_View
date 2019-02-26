@@ -16,7 +16,7 @@ import com.zhangjie.zjcustomview.R;
  * Email 240336124@qq.com
  * Created by Darren on 2017/5/20.
  * Version 1.0
- * Description: 仿QQ运动步数
+ * Description: 仿QQ运动步数器
  */
 public class QQStepView extends View {
 

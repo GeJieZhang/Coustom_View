@@ -18,7 +18,9 @@ import com.zhangjie.zjcustomview.R;
 
 import static android.support.constraint.Constraints.TAG;
 
-
+/**
+ * 多遍行加载动画
+ */
 public class LoadingView extends View {
 
 

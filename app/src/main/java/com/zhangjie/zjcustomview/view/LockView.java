@@ -15,6 +15,10 @@ import com.zhangjie.zjcustomview.tool.MathUtil;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * 图案解锁功能
+ */
 public class LockView extends View {
 
     private List<List<Point>> pointList = new ArrayList<>();

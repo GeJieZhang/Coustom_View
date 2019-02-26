@@ -19,6 +19,9 @@ import android.widget.RelativeLayout;
 
 import com.zhangjie.zjcustomview.R;
 
+/**
+ * 花束点赞
+ */
 public class zan_view extends RelativeLayout {
 
 

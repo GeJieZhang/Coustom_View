@@ -18,6 +18,11 @@ import com.zhangjie.zjcustomview.R;
 import com.zhangjie.zjcustomview.tool.PxUtils;
 import com.zhangjie.zjcustomview.tool.TextUtils;
 
+
+/**
+ * 记步View
+ */
+
 public class StepView extends View {
 
     //控件的宽高

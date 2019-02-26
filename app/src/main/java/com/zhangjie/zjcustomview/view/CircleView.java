@@ -9,6 +9,9 @@ import android.view.View;
 
 import com.zhangjie.zjcustomview.R;
 
+/**
+ * 画圆
+ */
 public class CircleView extends View {
 
     private float width=20;
