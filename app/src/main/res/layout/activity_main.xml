@@ -6,27 +6,17 @@
 
     android:orientation="vertical">
 
-  <com.zhangjie.zjcustomview.view.TagLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content" >
+    <com.zhangjie.zjcustomview.view.zj.CMTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
         android:text="你好"
 
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="我的"
+        android:textColor="@color/colorAccent"
 
         />
-  </com.zhangjie.zjcustomview.view.TagLayout>
-
-
-
 
 
 </LinearLayout>
